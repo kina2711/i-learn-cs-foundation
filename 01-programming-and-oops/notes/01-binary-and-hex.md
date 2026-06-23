@@ -19,7 +19,7 @@ Mỗi chữ số nhị phân được gọi là một **Bit** (Binary Digit). Bi
 Tương tự như hệ thập phân (các hàng đơn vị, hàng chục, hàng trăm tương ứng với $10^0, 10^1, 10^2$), hệ nhị phân sử dụng trọng số theo lũy thừa của 2 ($2^0, 2^1, 2^2, \dots$).
 
 Ví dụ, để tính giá trị thập phân của chuỗi nhị phân `1011`:
-$$ 1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 1 \times 2^0 = 8 + 0 + 2 + 1 = 11 $$
+$ 1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 1 \times 2^0 = 8 + 0 + 2 + 1 = 11 $
 
 ### Đơn vị lưu trữ cơ sở (Byte)
 Quản lý dữ liệu ở cấp độ từng Bit là không hiệu quả đối với cấu trúc địa chỉ bộ nhớ. Do đó, hệ thống máy tính quy ước gom nhóm các bit lại thành đơn vị lớn hơn:
