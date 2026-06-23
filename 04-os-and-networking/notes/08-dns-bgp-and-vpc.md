@@ -42,15 +42,15 @@ VPC là một khu công nghiệp ảo, rào bằng hàng rào kẽm gai điện 
 
 ```mermaid
 graph TD
-    subgraph "VPC của Công ty (Dải IP: 10.0.0.0/16)"
+    subgraph VPC của Công ty (Dải IP: 10.0.0.0/16)
         IGW((Internet Gateway)) --> FW[Firewall / Security Group]
         
-        subgraph "Public Subnet (Có thể ra/vào Internet)"
+        subgraph Public Subnet (Có thể ra/vào Internet)
             FW --> LB[Load Balancer]
             FW --> BS[Bastion Host / SSH Jump Server]
         end
         
-        subgraph "Private Subnet (Kín bưng - Cô lập với Thế giới)"
+        subgraph Private Subnet (Kín bưng - Cô lập với Thế giới)
             LB --> App[Kafka Brokers & Spark Workers]
             BS -.-> App
             App --> DB[(Database / Data Warehouse)]

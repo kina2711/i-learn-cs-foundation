@@ -31,7 +31,7 @@ Mọi lệnh tính toán bị đóng băng hoàn toàn cho đến khi Lập trì
 
 ```mermaid
 graph TD
-    subgraph "Kiến trúc Lazy Evaluation của Spark"
+    subgraph Kiến trúc Lazy Evaluation của Spark
         A(Đọc File Data Lake) -->|Transformation 1| B(Lọc Filter <br> Ghi nhớ vào DAG)
         B -->|Transformation 2| C(Gộp Join <br> Ghi nhớ vào DAG)
         C -->|Action Gọi| D((Kích hoạt Thực thi Tính toán Toàn Bộ trên RAM))

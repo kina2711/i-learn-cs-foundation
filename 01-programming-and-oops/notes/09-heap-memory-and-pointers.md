@@ -29,14 +29,14 @@ Trong các ngôn ngữ quản lý bộ nhớ (Java, Python, C#), cơ chế Con t
 
 ```mermaid
 graph LR
-    subgraph "Stack Memory (Hàm)"
-        P1["Biến con trỏ `player_1`<br/>Giá trị: 0x2A3B"]
-        P2["Biến tham chiếu `item`<br/>Giá trị: 0x9F1D"]
+    subgraph Stack Memory (Hàm)
+        P1[Biến con trỏ `player_1`<br/>Giá trị: 0x2A3B]
+        P2[Biến tham chiếu `item`<br/>Giá trị: 0x9F1D]
     end
     
-    subgraph "Heap Memory (Dữ liệu tự do)"
-        O1["Địa chỉ: 0x2A3B<br/>Object: Player_Struct"]
-        O2["Địa chỉ: 0x9F1D<br/>Object: Weapon_Struct"]
+    subgraph Heap Memory (Dữ liệu tự do)
+        O1[Địa chỉ: 0x2A3B<br/>Object: Player_Struct]
+        O2[Địa chỉ: 0x9F1D<br/>Object: Weapon_Struct]
     end
     
     P1 -.->|Trỏ đến dữ liệu| O1

@@ -89,7 +89,7 @@ File output = converter.convertVideo("demo.mp4", "avi");
 graph TD
     Client[Module Luồng Nghiệp Vụ] -->|Gọi duy nhất 1 API hàm| Facade[Lớp Facade<br/>Bề mặt Tương tác]
     
-    subgraph "Kiến trúc Hạ tầng Phức tạp"
+    subgraph Kiến trúc Hạ tầng Phức tạp
         A[Audio Subsystem]
         B[Video Codec Module]
         C[Bitrate Controller]

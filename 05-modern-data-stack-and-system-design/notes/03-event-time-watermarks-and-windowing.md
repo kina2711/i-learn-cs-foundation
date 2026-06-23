@@ -34,14 +34,14 @@ Ví dụ: Flink cấu hình độ trễ cho phép là 3 phút.
 
 ```mermaid
 graph LR
-    subgraph "Cơ chế Trễ Hẹn Watermark (Chờ 3 phút)"
-        Data1["Gói 10:58"] -->|Bay cực nhanh tới Flink| F(Flink)
-        Data2["Gói 10:59"] -.->|Bị kẹt ở mạng 3G, bay siêu chậm| F
-        Data3["Gói 11:02"] -->|Bay cực nhanh tới Flink| F
+    subgraph Cơ chế Trễ Hẹn Watermark (Chờ 3 phút)
+        Data1[Gói 10:58] -->|Bay cực nhanh tới Flink| F(Flink)
+        Data2[Gói 10:59] -.->|Bị kẹt ở mạng 3G, bay siêu chậm| F
+        Data3[Gói 11:02] -->|Bay cực nhanh tới Flink| F
         
         F -->|Thấy 11:02, suy ra Watermark = 10:59 <br> Xô 10h-11h VẪN MỞ| X10[Xô Chờ Đợi]
         Data2 -->|Tới nơi lúc 11:03 <br> Hứng vừa kịp lúc| X10
-        Data4["Gói 11:04"] -->|Tới nơi <br> Kích hoạt Watermark = 11:01| F
+        Data4[Gói 11:04] -->|Tới nơi <br> Kích hoạt Watermark = 11:01| F
         
         F -->|ĐÓNG NẮP <br> XUẤT BÁO CÁO 10h-11h| DB[(Data Warehouse)]
     end

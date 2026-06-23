@@ -73,14 +73,14 @@ Bất kỳ đối tượng Heap Memory nào được nạp bởi Lớp đó cũn
 
 ```mermaid
 graph LR
-    subgraph "Đối tượng trên Heap"
+    subgraph Đối tượng trên Heap
         D[Object Dog<br/>+ vptr]
         C[Object Cat<br/>+ vptr]
     end
     
-    subgraph "Bảng V-Table lưu trong RAM"
-        VD["V-Table của Dog<br/>+ speak(") -> Địa chỉ vùng hàm Gâu Gâu]
-        VC["V-Table của Cat<br/>+ speak(") -> Địa chỉ vùng hàm Meo Meo]
+    subgraph Bảng V-Table lưu trong RAM
+        VD[V-Table của Dog<br/>+ speak() -> Địa chỉ vùng hàm Gâu Gâu]
+        VC[V-Table của Cat<br/>+ speak() -> Địa chỉ vùng hàm Meo Meo]
     end
     
     D -.->|Trỏ đến| VD

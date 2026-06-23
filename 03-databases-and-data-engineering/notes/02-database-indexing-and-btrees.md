@@ -25,15 +25,15 @@ Thay vì một Node chứa 1 Key, hệ thống nhồi nhét vào Node đó hàng
 
 ```mermaid
 graph TD
-    subgraph "B+Tree Structure (Cấu trúc phổ biến nhất trong RDBMS)"
-        Root[""Root Page<br/>[100, 500, 1000"]"]
-        L1[""Branch Page 1<br/>[10, 50, 80"]"]
-        L2[""Branch Page 2<br/>[200, 350, 450"]"]
-        L3[""Branch Page 3<br/>[600, 800"]"]
+    subgraph B+Tree Structure (Cấu trúc phổ biến nhất trong RDBMS)
+        Root["Root Page<br/>[100, 500, 1000]"]
+        L1["Branch Page 1<br/>[10, 50, 80]"]
+        L2["Branch Page 2<br/>[200, 350, 450]"]
+        L3["Branch Page 3<br/>[600, 800]"]
         
-        Leaf1[""Leaf Page 1<br/>[10->Disk Address, 50->..., 80->..."]"]
-        Leaf2[""Leaf Page 2<br/>[100->..., 200->..., 350->..."]"]
-        Leaf3[""Leaf Page 3<br/>[450->..., 500->..., 600->..."]"]
+        Leaf1["Leaf Page 1<br/>[10->Disk Address, 50->..., 80->...]"]
+        Leaf2["Leaf Page 2<br/>[100->..., 200->..., 350->...]"]
+        Leaf3["Leaf Page 3<br/>[450->..., 500->..., 600->...]"]
         
         Root -->|< 100| L1
         Root -->|100 - 499| L2

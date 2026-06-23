@@ -44,17 +44,17 @@ Chính nhờ việc không cần thiết lập Guest OS trung gian, Docker Conta
 
 ```mermaid
 graph TD
-    subgraph "Kiến trúc Máy ảo (VMware/KVM)"
+    subgraph Kiến trúc Máy ảo (VMware/KVM)
         H1[Server Hardware] --> HY[Hypervisor]
-        HY --> G1["Guest OS 1 (2GB RAM")] --> A1[App A]
-        HY --> G2["Guest OS 2 (2GB RAM")] --> A2[App B]
+        HY --> G1[Guest OS 1 (2GB RAM)] --> A1[App A]
+        HY --> G2[Guest OS 2 (2GB RAM)] --> A2[App B]
     end
     
-    subgraph "Kiến trúc Container (Docker)"
+    subgraph Kiến trúc Container (Docker)
         H2[Server Hardware] --> L[Host OS Linux Kernel]
         L -->|Phân cách Cgroups/Namespaces| D1[Docker Eng]
-        D1 -.-> CA["Container App A (Chạy thẳng trên Kernel Host")]
-        D1 -.-> CB["Container App B (Chạy thẳng trên Kernel Host")]
+        D1 -.-> CA[Container App A (Chạy thẳng trên Kernel Host)]
+        D1 -.-> CB[Container App B (Chạy thẳng trên Kernel Host)]
     end
 ```
 

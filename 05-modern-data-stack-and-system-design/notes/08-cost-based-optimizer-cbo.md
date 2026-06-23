@@ -37,7 +37,7 @@ Thay vào đó, CBO bốc nguyên cục Customer 1MB đó, Photocopy ra thành 1
 
 ```mermaid
 graph TD
-    subgraph "Cơ chế Broadcast Hash Join (Không Shuffle)"
+    subgraph Cơ chế Broadcast Hash Join (Không Shuffle)
         O[Bảng Order 10TB nằm rải rác]
         C[Bảng Customer Nhỏ 1MB]
         

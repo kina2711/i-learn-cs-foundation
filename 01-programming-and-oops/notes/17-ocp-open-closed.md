@@ -36,11 +36,11 @@ Giải pháp khắc phục cơ chế này xoay quanh cơ sở lý thuyết Tính
 
 ```mermaid
 graph TD
-    subgraph "Kiến trúc vi phạm OCP"
+    subgraph Kiến trúc vi phạm OCP
         P[PaymentProcessor<br/>If/Else logic tĩnh]
     end
     
-    subgraph "Kiến trúc OCP tuân thủ"
+    subgraph Kiến trúc OCP tuân thủ
         PP[PaymentProcessor<br/>Chỉ chấp nhận đối tượng IPaymentMethod]
         I((IPaymentMethod<br/>Interface))
         C[CreditCard]

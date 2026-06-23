@@ -31,7 +31,7 @@ Công cụ tiêu biểu: **Nginx, AWS Application Load Balancer (ALB)**.
 
 ```mermaid
 graph TD
-    subgraph "Kiến trúc Layer 7 Load Balancing (Reverse Proxy)"
+    subgraph Kiến trúc Layer 7 Load Balancing (Reverse Proxy)
         Client((Mobile App)) -->|Gửi POST /api/v1/payments| LB[Nginx Layer 7 LB]
         Client2((Trình duyệt)) -->|Gửi GET /images/logo.png| LB
         

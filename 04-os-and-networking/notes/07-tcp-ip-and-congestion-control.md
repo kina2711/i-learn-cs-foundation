@@ -44,7 +44,7 @@ Sliding Window gây ra một thảm họa tàn khốc: Nếu Máy A có mạng c
 
 ```mermaid
 graph TD
-    subgraph "Cơ chế Slow Start & Congestion Avoidance"
+    subgraph Cơ chế Slow Start & Congestion Avoidance
         A(Khởi động: Window = 1) --> B(Gấp đôi liên tục: 1 -> 2 -> 4 -> 8 -> 16)
         B -->|Chạm mốc sstresh| C(Cộng chậm: 16 -> 17 -> 18)
         C -.->|Có Gói Rớt do Nghẽn Mạng| D(Trừng phạt nặng: Chặt đôi Window)

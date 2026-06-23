@@ -41,7 +41,7 @@ Chúng ta thiết kế Kiến trúc **Streaming + In-Memory Caching (Redis/Kafka
 
 ```mermaid
 graph TD
-    subgraph "Kiến trúc Bộ đếm Lượt Xem Youtube (Real-time & Batch)"
+    subgraph Kiến trúc Bộ đếm Lượt Xem Youtube (Real-time & Batch)
         U(1 Triệu Client Click) -->|Hứng bằng| API[API Gateway Layer 7]
         API -->|Ghi tạc vào Đĩa tốc độ ánh sáng| KAF(Apache Kafka <br> Lưu Log Raw 100%)
         

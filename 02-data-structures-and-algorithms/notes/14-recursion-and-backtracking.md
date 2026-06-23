@@ -35,11 +35,11 @@ Bài toán kinh điển: **Xếp 8 Quân Hậu trên bàn cờ Vua (8-Queens Pro
 
 ```mermaid
 graph TD
-    A["Root: Bàn cờ trống"] -->|Bước 1| B["Đặt Hậu hàng 1, Cột 1"]
-    B -->|Bước 2| C["Đặt Hậu hàng 2, Cột 3"]
+    A[Root: Bàn cờ trống] -->|Bước 1| B[Đặt Hậu hàng 1, Cột 1]
+    B -->|Bước 2| C[Đặt Hậu hàng 2, Cột 3]
     C -->|Bước 3| D[Đặt Hậu hàng 3... Phát hiện bế tắc]
     D -.->|Undo state - Quay lui| C
-    C -->|Thử Cột 4| C2["Đặt Hậu hàng 2, Cột 4"]
+    C -->|Thử Cột 4| C2[Đặt Hậu hàng 2, Cột 4]
     
     style D fill:#f8d7da,stroke:#dc3545
     style C2 fill:#d4edda,stroke:#28a745

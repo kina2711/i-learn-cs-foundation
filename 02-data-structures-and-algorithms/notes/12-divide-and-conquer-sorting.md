@@ -16,16 +16,16 @@ Merge Sort áp dụng phương pháp chia đôi thuần túy, đảm bảo hiệ
 
 ```mermaid
 graph TD
-    A["Dải gốc: 38, 27, 43, 3"] -->|Chia 1| B1["38, 27"]
-    A -->|Chia 1| B2["43, 3"]
+    A[Dải gốc: 38, 27, 43, 3] -->|Chia 1| B1[38, 27]
+    A -->|Chia 1| B2[43, 3]
     B1 -->|Chia 2| C1[38]
     B1 -->|Chia 2| C2[27]
     B2 -->|Chia 2| C3[43]
     B2 -->|Chia 2| C4[3]
     
-    C1 & C2 -->|Gộp + Sắp xếp| D1["27, 38"]
-    C3 & C4 -->|Gộp + Sắp xếp| D2["3, 43"]
-    D1 & D2 -->|Hoàn thiện| E["3, 27, 38, 43"]
+    C1 & C2 -->|Gộp + Sắp xếp| D1[27, 38]
+    C3 & C4 -->|Gộp + Sắp xếp| D2[3, 43]
+    D1 & D2 -->|Hoàn thiện| E[3, 27, 38, 43]
 ```
 
 **Phân tích kỹ thuật (Trade-offs):**

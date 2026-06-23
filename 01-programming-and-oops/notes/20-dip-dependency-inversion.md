@@ -43,14 +43,14 @@ DIP tiến hành giải mã liên kết cấu trúc bằng cách thiết lập m
 
 ```mermaid
 graph TD
-    subgraph "Không tuân thủ DIP"
-        H1["High-level: ReportService"] -->|Sở hữu khởi tạo cứng| L1["Low-level: MySQL"]
+    subgraph Không tuân thủ DIP
+        H1[High-level: ReportService] -->|Sở hữu khởi tạo cứng| L1[Low-level: MySQL]
     end
     
-    subgraph "Đảo ngược Phụ thuộc (DIP)"
-        H2["High-level: ReportService"] -->|Tương tác qua Giao diện| I((Interface: IDatabase))
-        L2["Low-level: MySQL"] -.->|Thực thi Bản hợp đồng| I
-        L3["Low-level: MongoDB"] -.->|Thực thi Bản hợp đồng| I
+    subgraph Đảo ngược Phụ thuộc (DIP)
+        H2[High-level: ReportService] -->|Tương tác qua Giao diện| I((Interface: IDatabase))
+        L2[Low-level: MySQL] -.->|Thực thi Bản hợp đồng| I
+        L3[Low-level: MongoDB] -.->|Thực thi Bản hợp đồng| I
     end
     
     style H1 fill:#f8d7da,stroke:#dc3545

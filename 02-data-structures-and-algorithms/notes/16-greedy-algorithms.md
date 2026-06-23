@@ -28,7 +28,7 @@ Giả sử hệ thống phát hành bộ tiền ảo có mệnh giá: `25c`, `20
 
 ```mermaid
 graph TD
-    subgraph "Thuật toán Thối tiền 40c"
+    subgraph Thuật toán Thối tiền 40c
         A[Bắt đầu] -->|Greedy Path: Luôn chọn lớn nhất trước| G1[25c] --> G2[10c] --> G3[1c x 5]
         A -->|DP Path: Quét quy hoạch không gian cục bộ| D1[20c] --> D2[20c]
     end

@@ -33,16 +33,16 @@ Thuật toán này không tính toán liên tục, thay vào đó thực hiện 
 
 ```mermaid
 graph TD
-    subgraph "GC Roots (Stack Memory)"
+    subgraph GC Roots (Stack Memory)
         R1[Main Thread Pointer]
         R2[Static Variable]
     end
     
-    subgraph "Heap Memory"
-        O1["Object A<br>Mark: Đang sử dụng"]
-        O2["Object B<br>Mark: Đang sử dụng"]
-        O3["Object C<br>Mark: Unreachable"]
-        O4["Object D<br>Mark: Unreachable"]
+    subgraph Heap Memory
+        O1[Object A<br>Mark: Đang sử dụng]
+        O2[Object B<br>Mark: Đang sử dụng]
+        O3[Object C<br>Mark: Unreachable]
+        O4[Object D<br>Mark: Unreachable]
     end
     
     R1 -.-> O1

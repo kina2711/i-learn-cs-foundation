@@ -7,7 +7,7 @@ Khi tệp thực thi được Hệ điều hành gọi vào bộ nhớ RAM để
 
 ```mermaid
 graph TD
-    subgraph "Sơ đồ Không gian Bộ nhớ Tiến trình (Virtual Memory)"
+    subgraph Sơ đồ Không gian Bộ nhớ Tiến trình (Virtual Memory)
         C[Phân vùng Lệnh mã hóa<br>Text / Code Segment]
         D[Phân vùng Dữ liệu Tĩnh<br>Data Segment]
         B[Phân vùng BSS<br>Uninitialized Data]

@@ -47,7 +47,7 @@ Khi OS quyết định dừng Tiến trình A để chạy Tiến trình B:
 
 ```mermaid
 graph TD
-    subgraph "Quá trình Context Switch đắt đỏ"
+    subgraph Quá trình Context Switch đắt đỏ
         CPU[Lõi CPU]
         A(Tiến trình Spark<br>Đang chạy) -.->|Dừng| OS(OS Kernel can thiệp<br>Tốn 10,000+ chu kỳ CPU)
         OS -.->|Xóa Cache & Đổi| B(Tiến trình Kafka<br>Tiếp tục chạy)

@@ -36,7 +36,7 @@ Flink ứng dụng lại thuật toán Snapshot vĩ đại của Khoa học máy
 
 ```mermaid
 graph LR
-    subgraph "Thuật toán Barrier Chandy-Lamport trong Flink"
+    subgraph Thuật toán Barrier Chandy-Lamport trong Flink
         K(Kafka Nguồn) -->|Data1, Data2, BARRIER, Data3| W1[Worker 1]
         
         W1 -.->|Thấy BARRIER: Chụp Snapshot 1| S3[(Amazon S3)]

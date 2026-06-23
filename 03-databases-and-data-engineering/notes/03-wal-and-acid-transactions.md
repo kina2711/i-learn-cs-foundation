@@ -51,7 +51,7 @@ Khi lệnh `UPDATE` tới máy chủ, hệ thống không ghi thẳng xuống Da
 
 ```mermaid
 graph TD
-    subgraph "Kiến trúc Write-Ahead Logging"
+    subgraph Kiến trúc Write-Ahead Logging
         U[Lệnh UPDATE từ App] --> RAM[Buffer Pool trong RAM<br/>Sửa Data thành Dirty Page]
         RAM -->|Lệnh Commit| WAL[Tệp WAL trên Disk<br/>Ghi Sequential Log O_1]
         WAL -->|Xác nhận an toàn| OK[Báo Commit Thành công cho App]

@@ -29,7 +29,7 @@ Một biến `float` (Độ chính xác đơn - Single Precision) có độ dài
 
 ```mermaid
 graph LR
-    subgraph "Biểu diễn Float 32-bit (IEEE 754)"
+    subgraph Biểu diễn Float 32-bit (IEEE 754)
         S[1 bit<br/>Sign] --- E[8 bit<br/>Exponent] --- M[23 bit<br/>Mantissa]
     end
     

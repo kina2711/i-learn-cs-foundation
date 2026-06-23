@@ -24,13 +24,13 @@ Trong 10 năm trở lại đây, sự bùng nổ của hạ tầng Đám mây (C
 
 ```mermaid
 graph TD
-    subgraph "Kiến trúc Cũ (ETL)"
+    subgraph Kiến trúc Cũ (ETL)
         S1[Nguồn OLTP] -->|Extract| E[Máy chủ trung gian Spark]
         E -->|Transform & Clean| E 
         E -->|Load Golden Data| W1[(Data Warehouse Đắt đỏ)]
     end
     
-    subgraph "Kiến trúc Đám mây Hiện đại (ELT)"
+    subgraph Kiến trúc Đám mây Hiện đại (ELT)
         S2[Nguồn OLTP] -->|Extract| L[Cloud Data Lake / BigQuery]
         L -->|Load Raw JSON/CSV| L
         L -->|Transform bằng SQL| C[Bảng Báo cáo Vàng]

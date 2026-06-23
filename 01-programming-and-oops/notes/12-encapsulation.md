@@ -57,8 +57,8 @@ class BankAccount {
 graph LR
     User[Code gọi Hàm]
     
-    subgraph "BankAccount Object"
-        API["Public API<br/>deposit(")<br/>withdraw()]
+    subgraph BankAccount Object
+        API[Public API<br/>deposit()<br/>withdraw()]
         Data[(Private Data<br/>balance = 100)]
     end
     

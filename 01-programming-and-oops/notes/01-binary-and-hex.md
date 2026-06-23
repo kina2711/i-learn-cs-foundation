@@ -49,11 +49,11 @@ Thay vì viết 1 Byte dưới dạng 8 bit (`10101111`), chúng ta có thể t�
 
 ```mermaid
 graph LR
-    subgraph "1 Byte trong RAM"
+    subgraph 1 Byte trong RAM
         B1[1] --- B2[0] --- B3[1] --- B4[0] --- B5[1] --- B6[1] --- B7[1] --- B8[1]
     end
     
-    subgraph "Hexadecimal Representation"
+    subgraph Hexadecimal Representation
         H1[A]
         H2[F]
     end

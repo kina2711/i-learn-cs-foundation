@@ -35,9 +35,9 @@ Danh sách liên kết loại bỏ sự phụ thuộc vào khối bộ nhớ li�
 
 ```mermaid
 graph LR
-    subgraph "RAM Heap Allocation"
-        A["Node 1: Data=10<br/>Next=0x2000"] -->|Link| B["Node 2: Data=20<br/>Next=0x8A10"]
-        B -->|Link| C["Node 3: Data=30<br/>Next=NULL"]
+    subgraph RAM Heap Allocation
+        A[Node 1: Data=10<br/>Next=0x2000] -->|Link| B[Node 2: Data=20<br/>Next=0x8A10]
+        B -->|Link| C[Node 3: Data=30<br/>Next=NULL]
     end
     
     style A fill:#d1ecf1,stroke:#17a2b8

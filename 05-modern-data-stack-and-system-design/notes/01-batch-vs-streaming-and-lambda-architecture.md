@@ -34,7 +34,7 @@ Kiến trúc Lambda bẻ đôi đường ống phân tích dữ liệu làm 2 ng
 
 ```mermaid
 graph TD
-    subgraph "Kiến trúc Lambda"
+    subgraph Kiến trúc Lambda
         K(Nguồn: Kafka)
         
         K -->|Nhánh Tốc độ| S(Speed Layer / Streaming)

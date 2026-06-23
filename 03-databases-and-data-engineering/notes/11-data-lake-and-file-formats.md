@@ -31,15 +31,15 @@ Nếu chỉ lưu rẽ nhánh thuần túy theo cột (Columnar), thao tác gom n
 
 ```mermaid
 graph TD
-    subgraph "Kiến trúc tệp Apache Parquet"
+    subgraph Kiến trúc tệp Apache Parquet
         File[Tệp Parquet Data.parquet] --> RG1[Row Group 1 <br/> Row 1 - 100k]
         File --> RG2[Row Group 2 <br/> Row 100k - 200k]
         
-        RG1 --> C1["Column Chunk: ID"]
-        RG1 --> C2["Column Chunk: Tên"]
-        RG1 --> C3["Column Chunk: Tiền"]
+        RG1 --> C1[Column Chunk: ID]
+        RG1 --> C2[Column Chunk: Tên]
+        RG1 --> C3[Column Chunk: Tiền]
         
-        C1 --> P1["Page: Header chứa Min/Max <br/> Dictionary Encoding"]
+        C1 --> P1[Page: Header chứa Min/Max <br/> Dictionary Encoding]
     end
 ```
 
