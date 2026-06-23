@@ -57,8 +57,8 @@ graph TD
     end
     
     subgraph Quá trình giải mã UTF-8
-        A[Phát hiện bit 0: Đây là 1 Byte ASCII]
-        V[Phát hiện bit 1110: Cần đọc gộp 3 Byte]
+        A["Phát hiện bit 0: Đây là 1 Byte ASCII"]
+        V["Phát hiện bit 1110: Cần đọc gộp 3 Byte"]
     end
     
     B1 --> A --> R1(Chữ 'A')

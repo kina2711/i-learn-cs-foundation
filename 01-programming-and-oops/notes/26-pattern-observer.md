@@ -23,13 +23,13 @@ Mô hình thiết lập hai thực thể cấu trúc:
 ```mermaid
 graph TD
     subgraph Cấu trúc Subject
-        S[DataStore<br/>- observersList: List<IObserver>]
+        S["DataStore<br/>- observersList: List<IObserver>"]
     end
     
     subgraph Kiến trúc Quan sát viên
-        O1[CacheSyncService<br/>+ update()]
-        O2[LoggingService<br/>+ update()]
-        O3[EmailNotification<br/>+ update()]
+        O1["CacheSyncService<br/>+ update()"]
+        O2["LoggingService<br/>+ update()"]
+        O3["EmailNotification<br/>+ update()"]
     end
     
     O1 -.->|1. subscribe()| S

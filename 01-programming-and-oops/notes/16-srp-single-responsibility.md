@@ -46,13 +46,13 @@ Quá trình chia rẽ cấu trúc (Refactoring):
 ```mermaid
 graph TD
     subgraph God Object
-        A[ReportManager<br/>(Hàng ngàn dòng code, làm mọi việc)]
+        A["ReportManager<br/>(Hàng ngàn dòng code, làm mọi việc)"]
     end
     
     subgraph SRP Architecture
-        D[ReportGenerator<br/>(Nhiệm vụ: Truy xuất dữ liệu DB)]
-        F[ReportFormatter<br/>(Nhiệm vụ: Chuyển đổi định dạng PDF/HTML)]
-        S[ReportSaver<br/>(Nhiệm vụ: Lưu trữ I/O lên Ổ cứng)]
+        D["ReportGenerator<br/>(Nhiệm vụ: Truy xuất dữ liệu DB)"]
+        F["ReportFormatter<br/>(Nhiệm vụ: Chuyển đổi định dạng PDF/HTML)"]
+        S["ReportSaver<br/>(Nhiệm vụ: Lưu trữ I/O lên Ổ cứng)"]
     end
     
     A -.->|Phân mảnh cấu trúc| D

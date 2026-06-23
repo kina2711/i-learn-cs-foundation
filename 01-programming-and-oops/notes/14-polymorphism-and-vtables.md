@@ -79,8 +79,8 @@ graph LR
     end
     
     subgraph Bảng V-Table lưu trong RAM
-        VD[V-Table của Dog<br/>+ speak() -> Địa chỉ vùng hàm Gâu Gâu]
-        VC[V-Table của Cat<br/>+ speak() -> Địa chỉ vùng hàm Meo Meo]
+        VD["V-Table của Dog<br/>+ speak() -> Địa chỉ vùng hàm Gâu Gâu"]
+        VC["V-Table của Cat<br/>+ speak() -> Địa chỉ vùng hàm Meo Meo"]
     end
     
     D -.->|Trỏ đến| VD

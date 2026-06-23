@@ -41,11 +41,11 @@ graph TD
     end
     
     subgraph RAM Big-Endian
-        B0[0x1000: 1A] --- B1[0x1001: 2B] --- B2[0x1002: 3C] --- B3[0x1003: 4D]
+        B0["0x1000: 1A"] --- B1["0x1001: 2B"] --- B2["0x1002: 3C"] --- B3["0x1003: 4D"]
     end
     
     subgraph RAM Little-Endian
-        L0[0x1000: 4D] --- L1[0x1001: 3C] --- L2[0x1002: 2B] --- L3[0x1003: 1A]
+        L0["0x1000: 4D"] --- L1["0x1001: 3C"] --- L2["0x1002: 2B"] --- L3["0x1003: 1A"]
     end
     
     D --> B0

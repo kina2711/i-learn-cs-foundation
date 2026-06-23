@@ -32,9 +32,9 @@ Binary Search vận hành dựa trên nguyên tắc không ngừng khoanh vùng 
 ```mermaid
 graph TD
     subgraph Thuật toán Loại trừ Binary Search
-        M[Đầu vào 1 triệu bản ghi] -->|Lần lặp 1| M1[500,000 bản ghi]
-        M1 -->|Lần lặp 2| M2[250,000 bản ghi]
-        M2 -->|Lần lặp 3| M3[125,000 bản ghi]
+        M[Đầu vào 1 triệu bản ghi] -->|Lần lặp 1| M1["500,000 bản ghi"]
+        M1 -->|Lần lặp 2| M2["250,000 bản ghi"]
+        M2 -->|Lần lặp 3| M3["125,000 bản ghi"]
         M3 -.->|Chỉ 20 lần lặp tối đa| M4[Tìm ra đúng bản ghi]
     end
     

@@ -33,7 +33,7 @@ graph LR
     U[Client Code] -->|1. Cấp phát CPU| B(ComputerBuilder)
     B -->|2. Cấp phát GPU| B
     B -->|3. Cấp phát RAM| B
-    B -->|4. Thực thi lệnh build()| P[Đóng gói: Object Computer]
+    B -->|4. Thực thi lệnh build()| P["Đóng gói: Object Computer"]
     
     style B fill:#d1ecf1,stroke:#17a2b8
     style P fill:#d4edda,stroke:#28a745

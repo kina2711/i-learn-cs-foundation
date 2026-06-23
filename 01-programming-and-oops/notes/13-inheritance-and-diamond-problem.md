@@ -19,8 +19,8 @@ Xét mô hình cấu trúc sau:
 
 ```mermaid
 graph TD
-    A[Lớp A<br/>+ print()] -->|Kế thừa| B[Lớp B<br/>+ print() riêng]
-    A -->|Kế thừa| C[Lớp C<br/>+ print() riêng]
+    A["Lớp A<br/>+ print()"] -->|Kế thừa| B["Lớp B<br/>+ print() riêng"]
+    A -->|Kế thừa| C["Lớp C<br/>+ print() riêng"]
     B -->|Đa kế thừa| D[Lớp D]
     C -->|Đa kế thừa| D
     

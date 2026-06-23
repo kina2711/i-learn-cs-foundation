@@ -64,8 +64,8 @@ Vậy số `-3` trong máy tính được lưu là **`1101`**.
 
 ```mermaid
 graph LR
-    A[Số +3: 0011] -->|Bước 1: Đảo bit| B[1100]
-    B -->|Bước 2: Cộng 1| C[Số -3: 1101]
+    A["Số +3: 0011"] -->|Bước 1: Đảo bit| B[1100]
+    B -->|Bước 2: Cộng 1| C["Số -3: 1101"]
     style C fill:#f8d7da,stroke:#dc3545,stroke-width:2px
 ```
 

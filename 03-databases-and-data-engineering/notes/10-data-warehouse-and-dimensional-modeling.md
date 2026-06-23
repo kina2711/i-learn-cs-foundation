@@ -38,10 +38,10 @@ graph TD
     subgraph Kiến trúc Star Schema
         F[(Fact_Sales<br> 50 Tỷ dòng)] 
         
-        D1[Dim_Date<br> (Ngày, Tháng, Quý)] -->|Date_ID| F
-        D2[Dim_Product<br> (SKU, Brand, Category)] -->|Product_ID| F
-        D3[Dim_Customer<br> (Tuổi, Tỉnh/Thành)] -->|Customer_ID| F
-        D4[Dim_Store<br> (Chi nhánh, Kênh bán)] -->|Store_ID| F
+        D1["Dim_Date<br> (Ngày, Tháng, Quý)"] -->|Date_ID| F
+        D2["Dim_Product<br> (SKU, Brand, Category)"] -->|Product_ID| F
+        D3["Dim_Customer<br> (Tuổi, Tỉnh/Thành)"] -->|Customer_ID| F
+        D4["Dim_Store<br> (Chi nhánh, Kênh bán)"] -->|Store_ID| F
     end
     
     style F fill:#dc3545,color:#fff

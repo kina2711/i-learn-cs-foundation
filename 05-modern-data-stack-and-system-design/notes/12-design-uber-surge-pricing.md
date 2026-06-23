@@ -27,13 +27,13 @@ Vì giá xe Surge Pricing được thay đổi 1 phút/lần. Hệ thống phả
 
 ```mermaid
 graph TD
-    subgraph Kiến trúc Uber Surge Pricing (Real-time Stream)
+    subgraph "Kiến trúc Uber Surge Pricing (Real-time Stream)"
         GPS(App Tài xế: Gửi Geohash w21z <br> 4 Giây / Lần) --> API[Web Socket Layer]
         KH(App Khách Hàng: Yêu cầu Đặt Xe <br> Mã Geohash w21z) --> API
         
-        API --> K[Kafka: Streaming Bus]
+        API --> K["Kafka: Streaming Bus"]
         
-        K --> F[Flink: Tính Tổng Cung Cầu trong 1 Phút]
+        K --> F["Flink: Tính Tổng Cung Cầu trong 1 Phút"]
         F -.->|Xe rảnh = 10 <br> Khách xin = 100| CALC[Thuật toán Tính Giá AI]
         CALC -.->|Lệnh: Giá = 3.5X| R[(Redis Cache Cluster)]
         

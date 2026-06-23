@@ -34,11 +34,11 @@ graph TD
     subgraph Kiến trúc Data Lakehouse
         SQ(Query Engine: Spark / Trino / Snowflake)
         
-        subgraph Lớp Định dạng Bảng (Table Format)
+        subgraph "Lớp Định dạng Bảng (Table Format)"
             IC(Apache Iceberg / Delta Lake <br> Cung cấp Giao dịch ACID)
         end
         
-        subgraph Lớp Tệp Tĩnh (Object Storage)
+        subgraph "Lớp Tệp Tĩnh (Object Storage)"
             P1(File_1.parquet)
             P2(File_2.parquet)
             P3(File_3.parquet)

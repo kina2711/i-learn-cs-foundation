@@ -38,7 +38,7 @@ Data Mesh không phải là phần mềm. Nó là **Sự thiết kế lại Tổ
 
 ```mermaid
 graph TD
-    subgraph Kiến trúc Lưới Phân quyền (Data Mesh)
+    subgraph "Kiến trúc Lưới Phân quyền (Data Mesh)"
         S(Team Sales) -->|Tự làm Pipeline| PS(Data Product: Bảng Sales Kéo Tinh)
         L(Team Logistics) -->|Tự làm Pipeline| PL(Data Product: Bảng Vận Đơn)
         M(Team Marketing) -->|Tự làm Pipeline| PM(Data Product: Bảng Tương Tác)

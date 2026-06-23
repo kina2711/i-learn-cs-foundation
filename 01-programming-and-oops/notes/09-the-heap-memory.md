@@ -23,8 +23,8 @@ Trong Java/C#/Python, bạn xin đất bằng từ khóa `new Object()`.
 ```mermaid
 graph TD
     subgraph RAM
-        S[Stack Memory<br>Giới hạn: 8MB<br>Lưu: int x, char y, Địa chỉ con trỏ]
-        H[Heap Memory<br>Giới hạn: Tính bằng GBs<br>Lưu: Object, Mảng siêu lớn, Strings]
+        S["Stack Memory<br>Giới hạn: 8MB<br>Lưu: int x, char y, Địa chỉ con trỏ"]
+        H["Heap Memory<br>Giới hạn: Tính bằng GBs<br>Lưu: Object, Mảng siêu lớn, Strings"]
     end
     
     S -.->|Pointer (Con trỏ chứa địa chỉ)| H

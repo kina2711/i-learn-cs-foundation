@@ -29,10 +29,10 @@ Cơ chế tổ chức hoạt động giống như một củ hành tây nhiều 
 
 ```mermaid
 graph TD
-    subgraph Vỏ bọc mở rộng 2 (SugarDecorator)
-        subgraph Vỏ bọc mở rộng 1 (MilkDecorator)
-            subgraph Thực thể cơ sở (BaseCoffee)
-                C[Cà Phê Gốc<br/>Giá trị: 10]
+    subgraph "Vỏ bọc mở rộng 2 (SugarDecorator)"
+        subgraph "Vỏ bọc mở rộng 1 (MilkDecorator)"
+            subgraph "Thực thể cơ sở (BaseCoffee)"
+                C["Cà Phê Gốc<br/>Giá trị: 10"]
             end
             M[Thêm Sữa<br/>Tiếp nhận luồng lõi + 5]
         end
