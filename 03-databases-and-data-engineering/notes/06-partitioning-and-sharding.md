@@ -47,7 +47,7 @@ Thay vì dùng phép chia lấy dư tuyến tính, thuật toán định hình K
 
 ```mermaid
 graph TD
-    subgraph Cơ chế vòng Consistent Hashing
+    subgraph "Cơ chế vòng Consistent Hashing"
         Ring((Vành khuyên Giá trị Hash))
         NodeA[Node A <br/> Quản lý góc 0° - 120°]
         NodeB[Node B <br/> Quản lý góc 120° - 240°]

@@ -27,7 +27,7 @@ Thay vì Hàng đợi, DFS ứng dụng nền tảng của **Ngăn xếp (Stack 
 
 ```mermaid
 graph TD
-    subgraph Chiến lược Khám phá Đồ thị
+    subgraph "Chiến lược Khám phá Đồ thị"
         S[Node A] --> B[Node B]
         S --> C[Node C]
         B --> D[Node D]

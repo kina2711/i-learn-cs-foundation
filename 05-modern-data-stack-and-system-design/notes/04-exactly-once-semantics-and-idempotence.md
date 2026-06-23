@@ -24,7 +24,7 @@ Bài toán chống đúp giao dịch đẻ ra 3 định mức cam kết mạng l
 
 ```mermaid
 graph TD
-    subgraph Thuật toán 2PC Exactly-Once (Flink to Kafka)
+    subgraph "Thuật toán 2PC Exactly-Once (Flink to Kafka)"
         F(Flink Worker) -.->|1. Viết dữ liệu giấu kín (Pre-commit)| K(Kafka Broker)
         F -->|2. Flink Checkpoint RAM thành công| S3[(S3 State)]
         F -->|3. Phát lệnh chốt sổ toàn mạng| K

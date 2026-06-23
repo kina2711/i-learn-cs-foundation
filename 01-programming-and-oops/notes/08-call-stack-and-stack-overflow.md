@@ -19,10 +19,10 @@ Khi hàm thực thi kết thúc vòng đời của mình (gặp lệnh `return` 
 
 ```mermaid
 graph TD
-    subgraph Kiến trúc Call Stack
-        F3[Stack Frame: Hàm `sum(a, b)`<br/>Biến cục bộ, Địa chỉ trả về]
-        F2[Stack Frame: Hàm `calculate()`<br/>Đang chờ `sum` tính toán]
-        F1[Stack Frame: Hàm `main()`<br/>Điểm khởi tạo tiến trình]
+    subgraph "Kiến trúc Call Stack"
+        F3["Stack Frame: Hàm `sum(a, b")`<br/>Biến cục bộ, Địa chỉ trả về]
+        F2["Stack Frame: Hàm `calculate(")`<br/>Đang chờ `sum` tính toán]
+        F1["Stack Frame: Hàm `main(")`<br/>Điểm khởi tạo tiến trình]
     end
     
     F1 --- F2 --- F3

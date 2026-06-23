@@ -50,7 +50,7 @@ Khi chuỗi byte này bay sang Server B qua mạng cáp quang, Server B dùng t�
 
 ```mermaid
 graph TD
-    subgraph Kiến trúc Giao tiếp gRPC siêu tốc
+    subgraph "Kiến trúc Giao tiếp gRPC siêu tốc"
         Client(Data Pipeline <br> Ngôn ngữ Python) --> |1. Dịch Object thành Byte Nhị phân| PB[Protobuf C-Core]
         PB --> |2. Bắn dồn dập qua ống Multiplexing| H2{HTTP/2 Transport TCP}
         H2 --> |3. Dịch ngược Byte thành Object| PB2[Protobuf C-Core]

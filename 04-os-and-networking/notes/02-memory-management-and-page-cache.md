@@ -34,7 +34,7 @@ Quá trình tráo đổi liên tục giữa RAM và Đĩa cứng này gọi là 
 
 ```mermaid
 graph LR
-    subgraph Hoạt động Swapping
+    subgraph "Hoạt động Swapping"
         RAM[Thanh RAM <br> Siêu Tốc]
         Disk[(Ổ đĩa cứng HDD/SSD <br> Swap Space)]
         

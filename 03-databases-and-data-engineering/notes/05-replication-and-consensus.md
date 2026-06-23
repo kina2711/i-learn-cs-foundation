@@ -52,8 +52,8 @@ Hệ thống đặt ra 3 tham số mạng:
 
 ```mermaid
 graph TD
-    subgraph Thuật toán Quorum W=2, R=2 trên 3 Replicas (N=3)
-        C1[Client GHI: X=10] -->|Thành công| N1((Node 1 <br/> Lưu X=10))
+    subgraph "Thuật toán Quorum W=2, R=2 trên 3 Replicas (N=3)"
+        C1["Client GHI: X=10"] -->|Thành công| N1((Node 1 <br/> Lưu X=10))
         C1 -->|Thành công| N2((Node 2 <br/> Lưu X=10))
         C1 -.->|Thất bại/Trễ| N3((Node 3 <br/> Kẹt ở X=5))
         

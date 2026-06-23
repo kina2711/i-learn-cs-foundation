@@ -21,14 +21,14 @@ Nguyên tắc của Hàm băm lý tưởng:
 ```mermaid
 graph LR
     K[Mã thẻ Tín Dụng<br/>"5432-1111-XXXX"] -->|Truyền Dữ liệu| H(Hàm Băm hệ thống<br/>Hash Function)
-    H -->|Xử lý O_1| I[Mã số Nguyên: 4]
+    H -->|Xử lý O_1| I["Mã số Nguyên: 4"]
     
-    subgraph Bảng Băm gốc (Array Cơ sở)
+    subgraph "Bảng Băm gốc (Array Cơ sở)"
         A0[Index 0]
         A1[Index 1]
         A2[Index 2]
         A3[Index 3]
-        A4[Index 4: Lưu thông tin thẻ Alex]
+        A4["Index 4: Lưu thông tin thẻ Alex"]
     end
     
     I -.->|Trỏ trực tiếp O_1| A4

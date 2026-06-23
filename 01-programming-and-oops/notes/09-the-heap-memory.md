@@ -23,8 +23,8 @@ Trong Java/C#/Python, bạn xin đất bằng từ khóa `new Object()`.
 ```mermaid
 graph TD
     subgraph RAM
-        S[Stack Memory<br>Giới hạn: 8MB<br>Lưu: int x, char y, Địa chỉ con trỏ]
-        H[Heap Memory<br>Giới hạn: Tính bằng GBs<br>Lưu: Object, Mảng siêu lớn, Strings]
+        S["Stack Memory<br>Giới hạn: 8MB<br>Lưu: int x, char y, Địa chỉ con trỏ"]
+        H["Heap Memory<br>Giới hạn: Tính bằng GBs<br>Lưu: Object, Mảng siêu lớn, Strings"]
     end
     
     S -.->|Pointer (Con trỏ chứa địa chỉ)| H
@@ -71,10 +71,10 @@ Tại sao? Tổng trống là 40MB, tôi chỉ xin 35MB cơ mà?
 ```mermaid
 block-beta
   columns 4
-  A["Đã xài (30MB)"]:1
-  Empty1["Trống (30MB)"]:1
-  C["Đã xài (30MB)"]:1
-  Empty2["Trống (10MB)"]:1
+  A[""Đã xài (30MB")"]:1
+  Empty1[""Trống (30MB")"]:1
+  C[""Đã xài (30MB")"]:1
+  Empty2[""Trống (10MB")"]:1
   
   style A fill:#dc3545,color:#fff
   style C fill:#dc3545,color:#fff

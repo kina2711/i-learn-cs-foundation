@@ -50,13 +50,13 @@ Khi tính gộp trung bình qua chuỗi thao tác, tổng khối lượng thời
 
 ```mermaid
 graph TD
-    subgraph Dòng thời gian cấp phát dữ liệu
-        A[Lần 1: O_1]
-        B[Lần 2: O_1]
-        C[Lần 3: O_1]
-        D[Lần 4: O_1 - Mảng đầy]
-        E[Lần 5: O_N - Resize & Copy]
-        F[Lần 6: O_1]
+    subgraph "Dòng thời gian cấp phát dữ liệu"
+        A["Lần 1: O_1"]
+        B["Lần 2: O_1"]
+        C["Lần 3: O_1"]
+        D["Lần 4: O_1 - Mảng đầy"]
+        E["Lần 5: O_N - Resize & Copy"]
+        F["Lần 6: O_1"]
     end
     
     A & B & C & D -->|Trả góp phí bù đắp| E

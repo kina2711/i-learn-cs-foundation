@@ -53,7 +53,7 @@ $\rightarrow$ `11111011` chính là biểu diễn nhị phân của `-5`.
 
 ```mermaid
 graph TD
-    subgraph Phép cộng: 5 + (-5) = 0
+    subgraph "Phép cộng: 5 + (-5) = 0"
         A[00000101] -->|Cộng| R[1 00000000]
         B[11111011] -->|Cộng| R
     end

@@ -45,7 +45,7 @@ Mô hình: Thiết lập một Mảng lõi đại diện cho $V$ Đỉnh. Mỗi 
 
 ```mermaid
 graph LR
-    subgraph Sơ đồ Danh sách kề
+    subgraph "Sơ đồ Danh sách kề"
         A(Đỉnh 0) -->|Linked List| L1[Đỉnh 1]
         A -->|Linked List| L2[Đỉnh 4]
         B(Đỉnh 1) -->|Linked List| L3[Đỉnh 0]

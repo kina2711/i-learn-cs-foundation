@@ -34,7 +34,7 @@ Cấu trúc lưu trữ chia làm 2 tầng: RAM và Disk.
 
 ```mermaid
 graph TD
-    subgraph LSM-Tree Architecture
+    subgraph "LSM-Tree Architecture"
         W[Client Lệnh GHI] -->|Ghi Nối tiếp Cực Nhanh| RAM(MemTable trên RAM <br/> Sắp xếp theo khóa)
         RAM -.->|Đầy RAM - Xả ra Disk| L1[Level 1 SSTables trên Disk <br/> Immutable Files]
         L1 -.->|Kích thước lớn lên| L2[Level 2 SSTables]
